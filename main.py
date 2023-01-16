@@ -73,8 +73,6 @@ code_to_letter = {
 
 code = input("Enter what you want to encode as Morse Code: ").upper()
 
-encoded_mc = []
-for letter in code:
-    encoded_mc.append(letter_to_code[letter])
-new_code = ' '.join(encoded_mc)
-print(f"Your Encoded Morse Code is: {new_code}")
+encoded_mc = ' '.join([letter_to_code[letter] for letter in code])
+
+print(f"Your Encoded Morse Code is: {encoded_mc}")
