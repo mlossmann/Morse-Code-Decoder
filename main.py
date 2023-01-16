@@ -76,3 +76,4 @@ code = input("Enter what you want to encode as Morse Code: ").upper()
 encoded_mc = ' '.join([letter_to_code[letter] for letter in code])
 
 print(f"Your Encoded Morse Code is: {encoded_mc}")
+
